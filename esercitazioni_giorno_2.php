@@ -276,3 +276,156 @@ function rimuoviDuplicati($arr) {
 }
 
 print_r(rimuoviDuplicati($arrayValori));
+
+
+## Esercizio 1: Inverti l'array
+// Data una lista di numeri, restituisci l’array invertito.
+$numeri = [1, 2, 3, 4];
+function numeriInvertiti($arr) {
+    $numeriInvertiti = array_reverse($arr);
+    return $numeriInvertiti;
+}
+
+print_r(numeriInvertiti($numeri));
+
+
+## Esercizio 2: Somma dei numeri pari
+// Data una lista di numeri, restituisci la somma di quelli pari.
+$valori = [1, 4, 6, 7, 10];
+
+function sommaPari($arr) {
+    $sommaNumeriPari = 0;
+    foreach($arr as $num) {
+        if($num % 2 === 0) {
+            $sommaNumeriPari += $num;
+        };
+    };
+    return $sommaNumeriPari;
+}
+
+print_r(sommaPari($valori));
+
+
+## Esercizio 3: Lunghezza delle parole
+// Data una lista di parole, restituisci un array con le rispettive lunghezze.
+$parole = ['ciao', 'PHP', 'developer'];
+
+function lunghezza($arr) {
+    $arrayLunghezze = [];
+    foreach ($arr as $str) {
+        $arrayLunghezze[$str] = strlen($str);
+    }
+
+    return $arrayLunghezze;
+}
+
+print_r(lunghezza($parole));
+
+
+## Esercizio 4: Capitalizza le parole
+// Data una lista di parole in minuscolo, restituisci una nuova lista con la prima lettera maiuscola.
+$nomi = ['mario', 'luigi', 'peppe'];
+
+function capitalize($arr) {
+    $nomiCapsLock = [];
+    foreach ($arr as $str) {
+        $nomiCapsLock[] = ucfirst($str);
+    }
+    return $nomiCapsLock;
+}
+
+print_r(capitalize($nomi));
+
+
+## Esercizio 5: Unione e ordinamento
+// Unisci due array e restituisci l’unico array risultante ordinato in ordine crescente.
+$a = [5, 1, 3];
+$b = [4, 2];
+
+function arrayFusion($arr, $arr2) {
+    $arrayUnito = array_merge($arr, $arr2);
+    sort($arrayUnito);
+    return $arrayUnito;
+}
+
+print_r(arrayFusion($a, $b));
+
+
+## Esercizio 6: Parole più lunghe di 4 caratteri
+// Filtra un array di parole e restituisci solo quelle che hanno più di 4 caratteri.
+$input = ['cane', 'gattino', 'albero', 'blu'];
+
+function overFour($arr) {
+    $strOverFour = [];
+    foreach($arr as $str) {
+        if(strlen($str) > 4) {
+            $strOverFour[] = $str;
+        }
+    }
+    return $strOverFour;
+}
+
+print_r(overFour($input));
+
+
+## Esercizio 7: Verifica esistenza chiave
+// Data una mappa (array associativo), verifica se esiste la chiave 'email'.
+$utente = ['nome' => 'Anna', 'cognome' => 'Rossi'];
+
+function keyExist($arr) {
+    if(array_key_exists("email", $arr)) {
+        return "La chiave EMAIL è presente";
+    } else {
+        return "La chiave EMAIL non è presente";
+    }
+}
+
+print_r(keyExist($utente));
+
+
+## Esercizio 8: Media dei valori
+// Data una lista di numeri, calcola la media aritmetica.
+$numeri = [7, 8, 6, 10];
+
+function media($arr) {
+    $somma = array_sum($arr);
+    $media = $somma / count($arr);
+    return $media;
+}
+
+print_r(media($numeri));
+
+
+## Esercizio 9: Frequenza caratteri in una stringa
+// Conta quante volte compare ogni carattere in una stringa.
+$stringa = 'banana';
+
+function occorrenzeStringa($str) {
+    $arrayStr = str_split($str);
+    $strCount = array_count_values($arrayStr);
+
+    return $strCount;
+}
+
+print_r(occorrenzeStringa($stringa));
+
+
+## Esercizio 10: Estrai i nomi da array associativo
+// Data una lista di utenti, estrai in un array i soli nomi.
+$utenti = [
+    ['nome' => 'Anna', 'eta' => 25],
+    ['nome' => 'Marco', 'eta' => 30],
+    ['nome' => 'Luca', 'eta' => 28]
+];
+
+function nomiUtenti($arr) {
+    $nomi = [];
+
+    foreach($arr as $student) {
+        $nomi[] = $student["nome"];
+    }
+
+    return $nomi;
+}
+
+print_r(nomiUtenti($utenti));

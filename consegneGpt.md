@@ -181,3 +181,42 @@ Implementa una funzione che sommi due numeri.
 **Suggerimenti**: Utilizza implode() per unire gli elementi di un array in una stringa.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Esercizio 1: Frequenze Parole
+    Data una lista di parole, conta quante volte appare ciascuna parola e restituisci un array associativo del tipo:
+        [
+        'gatto' => 3,
+        'cane' => 1,
+        'topo' => 2
+        ]
+
+**Input di esempio**: ['gatto', 'cane', 'gatto', 'topo', 'gatto', 'topo']
+
+## Esercizio 2: Nomi da Maiuscolo a Minuscolo
+    Data una lista di nomi scritti in maiuscolo, restituisci una nuova lista con tutti i nomi in minuscolo.
+
+**Esempio input**: ['ANNA', 'LUCA', 'MARCO']
+
+## Esercizio 3: Elementi Comuni
+    Data due liste di numeri interi, restituisci un nuovo array contenente solo i numeri presenti in entrambi gli array.
+
+**Input di esempio**: [1, 2, 3, 4], [3, 4, 5, 6]
+**Output atteso**: [3, 4]
+
+## Esercizio 4: Somma Voti
+    Hai una lista di array associativi rappresentanti studenti. Calcola la somma totale dei voti.
+
+**Input di esempio**:
+    [
+        ['nome' => 'Anna', 'voto' => 26],
+        ['nome' => 'Luca', 'voto' => 30],
+        ['nome' => 'Marco', 'voto' => 24]
+    ]
+
+**Output atteso**: 80
+
+## Esercizio 5: Rimuovere Duplicati
+    Data una lista di stringhe, restituisci un array che contiene ogni parola una sola volta, mantenendo l’ordine originale.
+
+**Esempio input**: ['rosso', 'verde', 'rosso', 'blu', 'verde']
+
+**Output atteso**: ['rosso', 'verde', 'blu']

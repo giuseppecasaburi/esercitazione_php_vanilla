@@ -199,3 +199,80 @@ return $stringa;
 }
 
 print_r(arrayInFrase($parole));
+
+
+## Esercizio 1: Frequenze Parole
+// Data una lista di parole, conta quante volte appare ciascuna parola e restituisci un array associativo del tipo:
+$input = ['gatto', 'cane', 'gatto', 'topo', 'gatto', 'topo'];
+
+function occorrenze($arr) {
+    $contatoreDiOccorrenze = array_count_values($arr);
+    return $contatoreDiOccorrenze;
+};
+
+print_r(occorrenze($input));
+
+
+## Esercizio 2: Nomi da Maiuscolo a Minuscolo
+// Data una lista di nomi scritti in maiuscolo, restituisci una nuova lista con tutti i nomi in minuscolo.
+$parole = ['ANNA', 'LUCA', 'MARCO'];
+function paroleInMinuscolo($arr) {
+    $paroleInMinuscolo = array_map("strtolower", $arr);
+    return $paroleInMinuscolo;
+};
+
+print_r(paroleInMinuscolo($parole));
+
+
+## Esercizio 3: Elementi Comuni
+// Data due liste di numeri interi, restituisci un nuovo array contenente solo i numeri presenti in entrambi gli array.
+$array = [1, 2, 3, 4];
+$array2 = [3, 4, 5, 6];
+
+function valoriComuni($arr, $arr2) {
+    $arrayCondiviso = array_intersect($arr, $arr2);
+    return $arrayCondiviso;
+}
+
+print_r(valoriComuni($array, $array2));
+
+
+## Esercizio 4: Somma Voti
+// Hai una lista di array associativi rappresentanti studenti. Calcola la somma totale dei voti.
+$arrayAssociativo = [
+    ['nome' => 'Anna', 'voto' => 26],
+    ['nome' => 'Luca', 'voto' => 30],
+    ['nome' => 'Marco', 'voto' => 24]
+];
+
+function sommaVoti($arr) {
+    $somma = 0;
+
+    foreach ($arr as $studente) {
+        $somma += $studente["voto"];
+    }
+
+    return $somma;
+}
+
+print_r(sommaVoti($arrayAssociativo));
+
+
+## Esercizio 5: Rimuovere Duplicati
+// Data una lista di stringhe, restituisci un array che contiene ogni parola una sola volta, mantenendo l’ordine originale.
+$arrayValori = ['rosso', 'verde', 'rosso', 'blu', 'verde'];
+function rimuoviDuplicati($arr) {
+    $visti = [];
+    $risultato = [];
+    
+    foreach($arr as $elem) {
+        if(!in_array($elem, $visti)) {
+            $visti[]= $elem;
+            $risultato[] = $elem;
+        };
+    };
+
+    return $risultato;
+}
+
+print_r(rimuoviDuplicati($arrayValori));

@@ -266,3 +266,50 @@ Implementa una funzione che sommi due numeri.
         ['nome' => 'Marco', 'eta' => 30],
         ['nome' => 'Luca', 'eta' => 28]
     ];
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Esercizio 1: Somma dei quadrati
+Data una lista di numeri, restituisci la somma dei quadrati di ciascun numero.
+    $numeri = [2, 3, 4];
+
+## Esercizio 2: Filtra solo numeri positivi
+Data una lista di numeri (positivi e negativi), restituisci solo quelli maggiori di zero.
+    $lista = [-5, 3, 0, -2, 10];
+
+## Esercizio 3: Conta vocali
+Data una stringa, conta quante vocali contiene.
+    $testo = "Programmare in PHP";
+    
+## Esercizio 4: Estrai indirizzi email
+Dato un array di utenti, estraine gli indirizzi email in un nuovo array.
+    $utenti = [
+        ['nome' => 'Anna', 'email' => 'anna@mail.com'],
+        ['nome' => 'Luca', 'email' => 'luca@mail.com']
+    ];
+
+## Esercizio 5: Verifica se tutti i numeri sono dispari
+Data una lista di numeri interi, restituisci true se tutti sono dispari, altrimenti false.
+    $valori = [3, 7, 11, 15];
+
+## Esercizio 6: Rimuovi elementi nulli
+Rimuovi tutti gli elementi null da un array.
+    $input = ['ciao', null, 'PHP', null, 'developer'];
+
+## Esercizio 7: Calcola percentuali
+Dato un array di voti da 0 a 30, restituisci un array con le percentuali rispetto al massimo (30).
+    $voti = [18, 27, 30];
+
+## Esercizio 8: Iniziali dei nomi
+Dato un array di nomi completi, restituisci un array con le iniziali.
+    $nomi = ['Mario Rossi', 'Luca Bianchi', 'Anna Verdi'];
+    // Output: ['MR', 'LB', 'AV']
+
+## Esercizio 9: Elemento più lungo
+Data una lista di stringhe, restituisci quella con il numero maggiore di caratteri.
+    $parole = ['ciao', 'sviluppatore', 'PHP', 'supercalifragilistichespiralidoso'];
+
+## Esercizio 10: Rimuovi la parola "nulla"
+Data una frase, rimuovi ogni occorrenza della parola "nulla" (ma non di parole simili come "annullare").
+$frase = "Non c'è nulla di interessante nella parola nulla.";
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------

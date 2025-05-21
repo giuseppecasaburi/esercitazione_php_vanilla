@@ -66,3 +66,118 @@ Scrivi una funzione generaPassword($lunghezza) che restituisce una password casu
 
 **Esempio**:
 generaPassword(8); // Output: "a9Bd3Xz1" (esempio casuale)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Esercizio 1: Filtrare Numeri Pari
+    Data una lista di numeri interi, crea una funzione che restituisca solo i numeri pari.
+    $numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+**Output Atteso**: [2, 4, 6, 8, 10]
+
+**Suggerimenti**: Utilizza array_filter() per filtrare l'array.
+Implementa una funzione anonima o una funzione di callback per determinare se un numero è pari.
+
+## Esercizio 2: Convertire Stringhe in Maiuscolo
+    Data una lista di nomi, scrivi una funzione che restituisca tutti i nomi in maiuscolo.
+    $nomi = ['anna', 'luca', 'marco'];
+
+**Output Atteso**: ['ANNA', 'LUCA', 'MARCO']
+
+**Suggerimenti**: Utilizza array_map() per applicare una funzione a ogni elemento dell'array.
+Usa la funzione strtoupper() per convertire le stringhe in maiuscolo.
+
+## Esercizio 3: Calcolare la Somma degli Elementi
+    Data una lista di numeri, scrivi una funzione che calcoli la somma totale degli elementi.
+    $numeri = [5, 10, 15];
+
+**Output Atteso**: 30
+
+**Suggerimenti**: Utilizza array_reduce() per accumulare i valori dell'array.
+Implementa una funzione che sommi due numeri.
+
+## Esercizio 4: Ordinare un Array Associativo per Valore
+    Data una lista di studenti con i loro punteggi, ordina l'array in ordine decrescente di punteggio.
+    $studenti = [
+        'Anna' => 28,
+        'Luca' => 22,
+        'Marco' => 30
+    ];
+
+**Output Atteso**:
+    [
+        'Marco' => 30,
+        'Anna' => 28,
+        'Luca' => 22
+    ]
+
+**Suggerimenti**: Utilizza arsort() per ordinare l'array associativo in ordine decrescente mantenendo le chiavi.
+
+## Esercizio 5: Unire Due Array
+
+    Data due liste di elementi, uniscile in un unico array.
+    $array1 = ['a', 'b', 'c'];
+    $array2 = ['d', 'e'];
+
+**Output Atteso**: ['a', 'b', 'c', 'd', 'e']
+
+**Suggerimenti**: Utilizza array_merge() per unire gli array.
+
+## Esercizio 6: Trovare la Differenza tra Due Array
+    Data due liste di numeri, trova gli elementi presenti nel primo array ma non nel secondo.
+    $array1 = [1, 2, 3, 4, 5];
+    $array2 = [2, 4];
+
+**Output Atteso**: [1, 3, 5]
+
+**Suggerimenti**: Utilizza array_diff() per trovare la differenza tra gli array.
+
+## Esercizio 7: Contare la Frequenza degli Elementi
+    Data una lista di elementi, conta quante volte ogni elemento appare nell'array.
+    $elementi = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+**Output Atteso**:
+    [
+        'apple' => 3,
+        'banana' => 2,
+        'orange' => 1
+    ]
+
+**Suggerimenti**: Utilizza array_count_values() per contare le occorrenze di ogni valore.
+
+## Esercizio 8: Accedere a un Array Multidimensionale
+    Data una lista di studenti con i loro dettagli, estrai solo i nomi.
+
+    $studenti = [
+        ['nome' => 'Anna', 'voto' => 28],
+        ['nome' => 'Luca', 'voto' => 22],
+        ['nome' => 'Marco', 'voto' => 30]
+    ];
+
+**Output Atteso**: ['Anna', 'Luca', 'Marco']
+
+**Suggerimenti**: Utilizza array_column() per estrarre una colonna specifica da un array multidimensionale.
+
+## Esercizio 9: Verificare l'Esistenza di una Chiave in un Array
+    Data una lista di prodotti con i loro prezzi, verifica se un determinato prodotto esiste nell'array.
+
+    $prodotti = [
+        'penna' => 1.5,
+        'matita' => 0.5,
+        'gomma' => 0.75
+    ];
+    $prodotto_da_verificare = 'matita';
+
+**Output Atteso**: true
+
+**Suggerimenti**: Utilizza array_key_exists() per verificare se una chiave esiste in un array.
+
+## Esercizio 10: Convertire un Array in una Stringa
+    Data una lista di parole, uniscile in una singola stringa separata da spazi.
+    $parole = ['Questo', 'è', 'un', 'test'];
+
+**Output Atteso**: 'Questo è un test'
+
+**Suggerimenti**: Utilizza implode() per unire gli elementi di un array in una stringa.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------

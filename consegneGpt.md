@@ -310,6 +310,54 @@ Data una lista di stringhe, restituisci quella con il numero maggiore di caratte
 
 ## Esercizio 10: Rimuovi la parola "nulla"
 Data una frase, rimuovi ogni occorrenza della parola "nulla" (ma non di parole simili come "annullare").
-$frase = "Non c'è nulla di interessante nella parola nulla.";
+    $frase = "Non c'è nulla di interessante nella parola nulla.";
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Esercizio 1: Numeri pari
+Data una lista di numeri, restituisci solo quelli pari.
+    $numeri = [1, 4, 7, 8, 10];
+
+## Esercizio 2: Somma dei numeri positivi
+Data una lista di numeri, somma solo i positivi.
+    $valori = [-2, 3, -1, 7, 0];
+
+## Esercizio 3: Crea un dizionario parola => lunghezza
+Data una lista di parole, crea un array associativo con parola => numero di lettere.
+    $parole = ['ciao', 'developer', 'php'];
+
+## Esercizio 4: Stringa palindroma
+Scrivi una funzione che verifica se una stringa è palindroma (uguale al contrario). Ignora maiuscole/minuscole.
+    $parola = "Anna"; // true
+
+## Esercizio 5: Capitalizza parole
+Scrivi una funzione che trasforma una frase in stile titolo (prima lettera maiuscola di ogni parola).
+    $frase = "ciao mondo da php"; // "Ciao Mondo Da Php"
+
+## Esercizio 6: Trova massimo e minimo
+Data una lista di numeri, restituisci un array con i valori minimo e massimo.
+    $numeri = [7, 2, 19, -4, 0];
+
+## Esercizio 7: Raggruppa per iniziale
+Data una lista di parole, raggruppale in base alla lettera iniziale.
+    $parole = ['cane', 'cielo', 'gatto', 'gioco', 'giardino', 'cavallo'];
+
+    🧠 Output atteso:
+    [
+        'c' => ['cane', 'cielo', 'cavallo'],
+        'g' => ['gatto', 'gioco', 'giardino']
+    ]
+
+## Esercizio 8: Frequenza delle lettere
+Data una stringa, conta quante volte appare ogni lettera (ignora spazi e differenza tra maiuscole/minuscole).
+    $testo = "Ciao Ciao PHP";
+
+    // Output: ['c' => 2, 'i' => 1, 'a' => 2, 'o' => 2, 'p' => 2, 'h' => 1]
+
+## Esercizio 9: Merge di due array associativi
+Unisci due array associativi. In caso di chiavi duplicate, mantieni il valore del secondo array.
+    $arr1 = ['nome' => 'Luca', 'email' => 'luca@mail.com'];
+    $arr2 = ['email' => 'luca@gmail.com', 'età' => 25];
+
+## Esercizio 10: Conta le parole
+Data una frase, conta quante parole contiene.
+    $frase = "PHP è un linguaggio molto usato nel backend";
